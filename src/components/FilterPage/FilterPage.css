@@ -1,0 +1,47 @@
+.transfer-info {
+  height: max-content;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
+.group {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.group:last-child {
+  margin-bottom: unset;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.currencies-wrapper,
+.transfers-wrapper {
+  border-radius: 10px;
+  margin-top: 24px;
+  display: flex;
+}
+
+.transfers-wrapper {
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .transfer-info {
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}

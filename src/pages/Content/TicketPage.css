@@ -1,0 +1,10 @@
+.main_page {
+  display: flex;
+  height: 100vh;
+}
+
+@media (max-width: 880px) {
+  .main_page {
+    flex-direction: column;
+  }
+}

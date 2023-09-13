@@ -1,0 +1,165 @@
+.ticket {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  margin-bottom: 30px;
+  padding: 12px;
+}
+
+.ticket:last-child {
+  margin-bottom: unset;
+}
+
+.left-side {
+  width: 100%;
+  border-right: 1px solid #f5e6d1;
+  max-width: 185px;
+  padding: 16px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+}
+
+.ticket-button {
+  padding: 8px 14px;
+  background-color: #ff6f00;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.logo-wrapper {
+  max-width: 120px;
+}
+
+.logo-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+.content-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.time {
+  font-size: 31px;
+  font-weight: 500;
+}
+
+.time,
+.city {
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.date {
+  color: #c0c5c6;
+}
+
+.content-divider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.airplane-icon-wrapper {
+  max-width: 40px;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.airplane-icon-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+.stops {
+  color: #8c9598;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .ticket {
+  }
+
+  .logo-wrapper {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .left-side {
+    max-width: 155px;
+    padding: 4px;
+    border-right: unset;
+  }
+
+  .ticket-button {
+    padding: 2px 4px;
+    font-size: 13px;
+  }
+
+  .time,
+  .date {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 12px;
+  }
+
+  .stops {
+    font-size: 12px;
+  }
+
+  .airplane-icon-wrapper {
+    max-width: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ticket {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: unset;
+  }
+
+  .content-divider {
+    align-items: flex-start;
+    margin: 14px 0;
+  }
+
+  .left-side {
+    max-width: 100%;
+    padding: unset;
+  }
+
+  .logo-wrapper {
+    display: none;
+  }
+
+  .ticket-button {
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ticket-button {
+    font-size: 16px;
+  }
+}

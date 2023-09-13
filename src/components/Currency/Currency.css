@@ -1,0 +1,40 @@
+.currency {
+  padding: 12px 20px;
+  text-transform: uppercase;
+  color: #7fc4f9;
+  font-weight: 700;
+  transition: 0.4s all;
+  border: 1px solid #eef0f0;
+}
+
+.currency:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.currency:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.currency:hover {
+  background-color: #f2fcff;
+  cursor: pointer;
+  border-color: #cce7fc;
+}
+
+.selected-currency {
+  color: #fff;
+  background-color: #0388f5;
+}
+
+.currency.active {
+  color: #fff;
+  background-color: #0388f5;
+}
+
+@media (max-width: 1024px) {
+  .currency {
+    font-size: 14px;
+  }
+}
