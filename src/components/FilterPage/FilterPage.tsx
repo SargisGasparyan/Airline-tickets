@@ -3,7 +3,7 @@ import { currenciesData } from './constants.ts';
 import Currency from '../Currency/Currency.tsx';
 import Checkbox from '../Checkbox/Checkbox.tsx';
 import { useDispatch } from 'react-redux';
-import { changeFilter, setCurrency } from '../../store/slices/ticketsSlice.ts';
+import { changeFilter, changeCurrency } from '../../store/slices/ticketsSlice.ts';
 import { useAppSelector } from '../../store/hooks.ts';
 
 const Filter = () => {
@@ -11,8 +11,8 @@ const Filter = () => {
 
   const { currency: activeCurrency } = useAppSelector((state) => state.tickets);
 
-  const changeCurrency = (currency: string) => {
-    dispatch(setCurrency(currency));
+  const handleCurrency = (currency: string) => {
+    dispatch(changeCurrency(currency));
   };
 
   const changeFilterHandler = (checkboxId: number, isOnly?: boolean) => {
@@ -20,7 +20,7 @@ const Filter = () => {
   };
 
   const currenciesArray = currenciesData.map(({ id, currency }) => {
-    return <Currency key={id} currency={currency} activeCurrency={activeCurrency} changeCurrency={changeCurrency} />;
+    return <Currency key={id} currency={currency} activeCurrency={activeCurrency} changeCurrency={handleCurrency} />;
   });
 
   const { filterTypes } = useAppSelector((state) => state.tickets);

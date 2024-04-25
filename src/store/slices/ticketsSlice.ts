@@ -25,7 +25,7 @@ export const ticketsSlice = createSlice({
     setInitialTickets(state, action) {
       state.tickets.push(...action.payload);
     },
-    setCurrency(state, action) {
+    changeCurrency(state, action) {
       state.currency = action.payload;
     },
     changeFilter(state, action) {
@@ -49,12 +49,11 @@ export const ticketsSlice = createSlice({
         }
         return acc;
       }, []);
-      console.log(choosenTickets, 'choosenTickets');
       state.activeFilter = choosenTickets;
     },
   },
 });
 
-export const { setInitialTickets, setCurrency, changeFilter } = ticketsSlice.actions;
+export const { setInitialTickets, changeCurrency, changeFilter } = ticketsSlice.actions;
 
 export default ticketsSlice.reducer;

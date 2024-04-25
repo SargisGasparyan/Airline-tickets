@@ -1,13 +1,17 @@
 .ticket {
   background-color: #fff;
-  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 12px;
+  border-radius: 12px;
   display: flex;
   align-items: flex-start;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
   -webkit-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
-  margin-bottom: 30px;
-  padding: 12px;
+  -moz-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
 }
 
 .ticket:last-child {
@@ -25,7 +29,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 18px;
+  padding: 16px;
 }
 
 .ticket-button {
