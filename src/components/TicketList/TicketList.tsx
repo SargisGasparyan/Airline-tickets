@@ -56,7 +56,7 @@ const TicketList = () => {
       },
     )
   ) : (
-    <h2>Список пустой 🗑️</h2>
+    <h2 className="empty-message">Список пустой 🗑️</h2>
   );
 
   return <div className={'tickets-list'}>{cardsRender}</div>;

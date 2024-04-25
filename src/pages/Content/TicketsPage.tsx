@@ -17,7 +17,7 @@ const TicketsPage = () => {
   }, []);
 
   return (
-    <div className={'main_page'}>
+    <div className={'tiket_page'}>
       <Filter />
       <CardsList />
     </div>
